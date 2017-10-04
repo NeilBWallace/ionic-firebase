@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Page One</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>AngularFire result: '/todo/currentTodos'</h2>
+  <p>{{ angularfireResult$ | async | json}}</p>
+
+  <h2>Firebase result: '/textItems'</h2>
+  <p>{{ firebaseResult | json}}</p>
+</ion-content>
